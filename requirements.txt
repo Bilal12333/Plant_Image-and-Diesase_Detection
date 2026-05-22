@@ -1,0 +1,8 @@
+streamlit
+tensorflow-cpu
+groq
+opencv-python-headless
+Pillow
+reportlab
+huggingface_hub
+numpy
