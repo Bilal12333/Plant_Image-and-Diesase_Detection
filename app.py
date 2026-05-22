@@ -20,8 +20,7 @@ from reportlab.lib.units import inch
 # PAGE CONFIG
 # =========================================================
 
-st.set_page_config(
-    page_title="PlantAI",
+st.set_page_config(    page_title="PlantAI",
     page_icon="🌿",
     layout="wide",
     initial_sidebar_state="collapsed"
@@ -129,7 +128,7 @@ st.markdown(
 
 # =========================================================
 # GROQ CLIENT
-GROQ_API_KEY = st.secrets["GROQ_API_KEY"]
+GROQ_API_KEY = os.environ.get("GROQ_API_KEY")
 client = Groq(api_key=GROQ_API_KEY)
 
 # =========================================================
